@@ -7,6 +7,7 @@
 //
 
 #import "JHViewController.h"
+#import <JHNetwork/JHNetworking.h>
 
 @interface JHViewController ()
 
@@ -18,6 +19,13 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    JHBaseRequest *request = [[JHBaseRequest alloc]init];
+    [request startRequestWithHandleCompletionSuccess:^(__kindof JHBaseRequest *request) {
+        
+    } failure:^(__kindof JHBaseRequest *request, NSError *error) {
+        
+    }];
 }
 
 - (void)didReceiveMemoryWarning
