@@ -1,0 +1,6 @@
+framework module Pods_JHNetwork_Tests {
+  umbrella header "Pods-JHNetwork_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
